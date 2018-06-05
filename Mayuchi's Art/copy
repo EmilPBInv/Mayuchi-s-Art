@@ -1,0 +1,157 @@
+<!--This Website was Developed for Mayuchi's Art-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="mayuchi, anime art, chibi art, silhouette art, Mayuchi's Art">
+    <meta owner="Mayuchi" content="Art Selling Page">
+    <link rel="icon" href="icon.png">
+    <title>Mayuchi's Art</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#contact">About Me</a></li>
+      <li><a href="#about">Shop</a></li>
+    </ul>
+    <div class="all">
+      <header>
+        <div class="intro">
+          <br>
+          <h1>❤Mayuchi’s Art❤</h1>
+          <h2>💎Shop💎</h2>
+          <br>
+        </div>
+      </header>
+      <!--Intro Section for Customers-->
+      <div class="wrapper">
+        <section class="about">
+          <div class="content about">
+            <div id="desc">
+              <h3>Open 1 Slot(s)</h3>
+              <p>Hello~ Thank you for checking out my Shop.
+                First of all, i’m a college student with strict parents :3
+                They don’t support my interest in artworks so i can’t get
+                funds from them 💔. I am currently aiming to buy a new drawing
+                tablet so i can make better Digital Artworks. That’s why my shop
+                is open for commissions ✒</p>
+              </div>
+          </div>
+        </section>
+
+        <!--Work Section-->
+        <br>
+        <h3>Art Samples & Prices</h3>
+        <h4>Complex Backgrounds = 10$USD</h4>
+
+        <section class="work">
+          <div class="image-area left">
+            <div class="row">
+              <div class="column">
+                <img src="./Imgs/samples/ex1.png" alt="Example1" style="width:80%"id="zoom"/>
+              </div>
+              <div class="column">
+                <img src="./Imgs/samples/ex2.png" alt="Example2" style="width:80%"id="zoom"/>
+              </div>
+              <div class="column">
+                <img src="./Imgs/samples/ex3.png" alt="Example3" style="width:80%"id="zoom"/>
+              </div>
+            </div>
+          </div>
+          <div class="text-box">
+            <div class="text-box-content">
+              <h3></h3>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row">
+            <div class="column">
+              <img src="./Imgs/samples/ex4.png" alt="Example4" style="width:70%"id="zoom" id="img-position1"/>
+            </div>
+            <div class="column">
+              <img src="./Imgs/samples/ex5v.png" alt="Example5" style="width:70%"id="zoom" id="img-position2"/>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+=============================================================================================
+
+* {
+  font-family: Arvo;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+div#desc {
+    width: 1260px;
+    text-align: center;
+    transform: translate(7%, 7%);
+}
+
+#zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+
+#zoom:hover {
+    transform: scale(0.9);
+}
+
+.img-position1 {
+    margin: auto;
+    width: 50%;
+    padding: 100px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}

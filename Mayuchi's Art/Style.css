@@ -1,0 +1,218 @@
+/*This Website was Developed for Mayuchi's Art*/
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+* {
+  font-family: Arvo;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-decoration: none;
+  height:100%;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+body {
+  font-weight: lighter;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(BG.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.content {
+  width: 94%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+#human {
+  list-style: none;
+}
+
+.logo {
+  line-height: 60px;
+  float: left;
+  margin: 16px 36px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+nav {
+  width: 100%;
+  line-height: 60px;
+  background: rgba(0,0,0,0.6);
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  overflow: hidden;
+  color: #000;
+  /*padding: 0;*/
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: .3s;
+}
+
+/*Don't Change It*/
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+  text-decoration: none;
+}
+
+nav ul li a {
+  font-weight: lighter;
+  text-decoration: none!important;
+  color: #fff;
+  font-size: 16px;
+}
+
+@media(max-width: 786px) {
+  .logo {
+    /*position: fixed;*/
+    top: 0;
+    margin-top: 16px;
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: #000;
+  }
+
+  nav.black ul {
+    background: #000;
+  }
+
+  .showing {
+    max-height: 34em;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  }
+}
+
+/*Link Hovering*/
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #CB4335;
+  transition: width .4s;
+}
+
+.cool-link:hover::after {
+  width: 130%;
+  transition: width .4s;
+}
+
+/*Parallax Effect*/
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url(./Imgs/samples/sample.jpg);
+  min-height:400px;
+}
+
+.pimg2{
+  background-image:url(./Imgs/silhouette/sil.jpg);
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url(BG2.jpg);
+  min-height:100%;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#282e34;
+  color: #D0D3D4;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:45%;
+  width:100%;
+  text-align:center;
+  color:#34495E;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:#BB8FCE;
+  border-radius: 10px;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+#may {
+  font-size: 24px;
+}
+
+#footer {
+  background-color:rgba(0,0,0,0.6);
+  color: #D0D3D4;
+  text-align: center;
+  padding: 30px;
+}
